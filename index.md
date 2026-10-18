@@ -19,13 +19,28 @@ hero:
       link: /setup
 
 features:
-  - icon: 📱
+  - icon:
+      src: /icons/android.svg
+      alt: Android
+      width: 28
+      height: 28
+      wrap: true
     title: Android App Development
     details: Build real Android apps in Java with current Android Studio, from your first Activity to multi-screen apps with Intents, Fragments, and notifications.
-  - icon: 🗄️
+  - icon:
+      src: /icons/sqlite.svg
+      alt: SQLite
+      width: 28
+      height: 28
+      wrap: true
     title: Data and Networking
     details: Store data with SQLite and SharedPreferences, then connect your apps to REST APIs to send and receive JSON over the network.
-  - icon: 🛠️
+  - icon:
+      src: /icons/spring.svg
+      alt: Spring
+      width: 28
+      height: 28
+      wrap: true
     title: Backend with Spring Boot
     details: Learn the Spring Boot fundamentals and write your own REST services with Spring MVC, the server side of the APIs your apps call.
 ---
