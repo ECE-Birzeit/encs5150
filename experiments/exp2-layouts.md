@@ -1,4 +1,4 @@
-# Exp 2: Android Layouts
+# Android Layouts
 
 In this lab you build a **Customer List** app with two screens:
 

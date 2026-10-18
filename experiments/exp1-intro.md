@@ -1,4 +1,4 @@
-# Exp 1: Introduction to Android Programming
+# Introduction to Android Programming
 
 In this lab you create your first Android project, look at the parts every Android app is made of, and build a small app that reads your name from a text field and greets you when you tap a button. Then you run it on the emulator and on a real phone.
 
