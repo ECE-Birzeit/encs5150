@@ -1,0 +1,41 @@
+/**
+ * Default VitePress theme with orange brand colors.
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-brand-1: #c2410c;
+  --vp-c-brand-2: #ea580c;
+  --vp-c-brand-3: #ea580c;
+  --vp-c-brand-soft: rgba(249, 115, 22, 0.14);
+
+  --vp-button-brand-bg: #ea580c;
+  --vp-button-brand-hover-bg: #c2410c;
+  --vp-button-brand-active-bg: #9a3412;
+
+  --vp-home-hero-name-color: #ea580c;
+}
+
+.dark {
+  --vp-c-brand-1: #fb923c;
+  --vp-c-brand-2: #f97316;
+  --vp-c-brand-3: #c2410c;
+  --vp-c-brand-soft: rgba(251, 146, 60, 0.16);
+
+  --vp-button-brand-bg: #c2410c;
+  --vp-button-brand-hover-bg: #ea580c;
+  --vp-button-brand-active-bg: #f97316;
+
+  --vp-home-hero-name-color: #fb923c;
+}
+
+/* Push the last two sidebar groups (Downloads, Documentation) to the bottom. */
+.VPSidebar .nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.VPSidebar .nav > .group:nth-last-child(2) {
+  margin-top: auto;
+}

@@ -1,0 +1,11 @@
+node_modules/
+.vitepress/cache/
+.vitepress/dist/
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Original manual (the site serves public/ENCS515-Manual.pdf)
+/ENCS515-Manual-with-spring-boots-12.pdf
