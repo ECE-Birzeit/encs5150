@@ -39,3 +39,13 @@
 .VPSidebar .nav > .group:nth-last-child(2) {
   margin-top: auto;
 }
+
+/* Screenshots and diagrams are the point of these pages, so frame them and
+   give them a light backdrop that survives dark mode. Matches ENCS4101 and
+   ENCS4110. */
+.vp-doc img {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  background: #fff;
+  margin: 0 auto;
+}
