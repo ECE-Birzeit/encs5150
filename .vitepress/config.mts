@@ -75,6 +75,10 @@ export default defineConfig({
 
     search: { provider: 'local' },
 
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/ECE-Birzeit/encs5150' },
+    ],
+
     footer: {
       message: 'ENCS5150 · Advanced Computer Systems Engineering Laboratory',
       copyright: 'Developed by Mohammad Abu-Shelbaia',
