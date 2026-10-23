@@ -16,6 +16,14 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
     ['meta', { name: 'theme-color', content: '#ea580c' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'ECE Lab Manuals · Birzeit University' }],
+    ['meta', { property: 'og:title', content: 'ENCS5150 Advanced Computer Systems Engineering Laboratory' }],
+    ['meta', { property: 'og:description', content: 'Step-by-step Android (Java) and Spring Boot lab manual for ENCS5150 at Birzeit University.' }],
+    ['meta', { property: 'og:image', content: 'https://encs5150.birzeit.me/og.png' }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-K834Q72PP9' }],
     [
       'script',
@@ -27,6 +35,8 @@ export default defineConfig({
     ],
   ],
 
+  sitemap: { hostname: 'https://encs5150.birzeit.me/' },
+
   themeConfig: {
     logo: '/favicon.svg',
     siteTitle: 'ENCS5150-BZU',
@@ -34,6 +44,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Experiments', link: '/experiments/', activeMatch: '/experiments/' },
+      { text: 'All labs', link: 'https://birzeit.me/' },
     ],
 
     sidebar: {
