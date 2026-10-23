@@ -41,6 +41,7 @@ export default defineConfig({
           items: [
             { text: '1. Introduction to Android', link: '/experiments/exp1-intro' },
             { text: '2. Android Layouts', link: '/experiments/exp2-layouts' },
+            { text: '3. Intents and Notifications', link: '/experiments/exp3-intents' },
           ],
         },
         {

@@ -6,7 +6,7 @@ Each guide is a step-by-step replacement for the matching chapter of the [depart
 | :-: | --- | --- |
 | 1 | [Introduction to Android Programming](./exp1-intro) | Android Studio, project structure, Activities, the manifest, running on an emulator and a device |
 | 2 | [Android Layouts](./exp2-layouts) | Views and ViewGroups, XML layouts, layouts built in code, Intents between Activities, event listeners |
-| 3 | Using Intents and Notifications | Implicit Intents (Maps, email, dialer), Toasts, status-bar notifications |
+| 3 | [Using Intents and Notifications](./exp3-intents) | Implicit Intents (Maps, email, dialer), Toasts, status-bar notifications |
 | 4 | SQLite Database | Creating and querying a local database, custom Views, confirmation dialogs |
 | 5 | Frame Animation and Tween Animation | Frame-by-frame animation, translate / rotate / scale, the `Animation` class |
 | 6 | Singleton and Shared Preferences | The singleton pattern, saving key–value data with `SharedPreferences` |
