@@ -105,6 +105,11 @@ export default defineConfig({
 
     search: { provider: 'local' },
 
+    editLink: {
+      pattern: 'https://github.com/ECE-Birzeit/encs5150/edit/main/:path',
+      text: 'Edit this page on GitHub',
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ECE-Birzeit/encs5150' },
     ],
