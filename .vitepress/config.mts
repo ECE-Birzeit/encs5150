@@ -18,8 +18,6 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#ea580c' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'ECE Lab Manuals · Birzeit University' }],
-    ['meta', { property: 'og:title', content: 'ENCS5150 Advanced Computer Systems Engineering Laboratory' }],
-    ['meta', { property: 'og:description', content: 'Step-by-step Android (Java) and Spring Boot lab manual for ENCS5150 at Birzeit University.' }],
     ['meta', { property: 'og:image', content: 'https://encs5150.birzeit.me/og.png' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
@@ -36,6 +34,17 @@ export default defineConfig({
   ],
 
   sitemap: { hostname: 'https://encs5150.birzeit.me/' },
+
+  // Link previews: per-page title, the page's (or site's) description, and canonical URL.
+  transformHead({ pageData, siteData }) {
+    const page = pageData.frontmatter.layout === 'home' ? '' : pageData.title
+    const path = pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
+    return [
+      ['meta', { property: 'og:title', content: page ? `${page} · ENCS5150` : 'ENCS5150 Advanced Computer Systems Engineering Laboratory' }],
+      ['meta', { property: 'og:description', content: pageData.frontmatter.description || pageData.description || siteData.description }],
+      ['meta', { property: 'og:url', content: `https://encs5150.birzeit.me/${path}` }],
+    ]
+  },
 
   themeConfig: {
     logo: '/favicon.svg',
