@@ -42,6 +42,16 @@ Found a mistake? Click **Edit this page on GitHub** at the bottom of any page, o
 
 `.github/workflows/deploy.yml` builds and deploys to GitHub Pages on every push to `main`, so merged changes are live within a couple of minutes at [encs5150.birzeit.me](https://encs5150.birzeit.me).
 
+## License
+
+The written content is licensed under [CC BY 4.0](LICENSE): you may share and adapt it, including for your own course, as long as you credit the source. Code, meaning `snippets/` and the site code (`.vitepress/`, `.github/`), is licensed under [MIT](LICENSE-CODE). © 2026 Mohammad Abu-Shelbaia.
+
+Not covered by either license, and still owned by their authors:
+
+- `public/ENCS515-Manual.pdf`, the department's manual
+
+The Birzeit University name and logo are the university's; they are not licensed here. Screenshots of third-party software, and product names and logos, belong to their respective owners.
+
 ---
 
 <sub>Part of [ECE Lab Manuals](https://birzeit.me) · Maintained by [Mohammad Abu-Shelbaia](https://github.com/mabushelbaia)</sub>
