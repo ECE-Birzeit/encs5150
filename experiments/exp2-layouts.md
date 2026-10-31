@@ -205,7 +205,7 @@ How it works:
 | Customers appear twice | `removeAllViews()` is missing at the start of `onResume`. |
 | Button is hidden under the status bar | The insets listener on `rootLinearLayout` is missing. |
 | `IllegalStateException: ScrollView can host only one direct child` | Add views to `customersLinearLayout`, not to `scrollView`. |
-| All customers disappear after a while | Expected: the list lives in memory and is cleared when Android kills the app. [Exp 4](/experiments/) stores data in SQLite. |
+| All customers disappear after a while | Expected: the list lives in memory and is cleared when Android kills the app. [Exp 4](./exp4-sqlite) stores data in SQLite. |
 
 ## Optional: WebView
 
