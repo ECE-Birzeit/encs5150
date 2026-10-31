@@ -1,6 +1,6 @@
 # Experiments
 
-Each guide is a step-by-step replacement for the matching chapter of the [department manual](/ENCS515-Manual.pdf){target="_blank"}, updated for current Android Studio. Linked experiments are ready, and the rest are coming soon. Finish the [Setup Guide](/setup) before your first lab.
+Each guide is a step-by-step replacement for the matching chapter of the [department manual](/ENCS515-Manual-2025.pdf){target="_blank"}, updated for current Android Studio. Linked experiments are ready, and the rest are coming soon. Finish the [Setup Guide](/setup) before your first lab.
 
 | No. | Experiment | Topics |
 | :-: | --- | --- |

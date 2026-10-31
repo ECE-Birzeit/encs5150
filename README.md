@@ -4,7 +4,7 @@
 
 Step-by-step lab manual for ENCS515 / ENCS5150 at Birzeit University: Android apps in Java, local data with SQLite, REST APIs, and the Spring Boot backend that serves them.
 
-**[Open the manual](https://encs5150.birzeit.me)** · [PDF](https://encs5150.birzeit.me/ENCS515-Manual.pdf) · [Setup guide](https://encs5150.birzeit.me/setup) · [All labs](https://birzeit.me)
+**[Open the manual](https://encs5150.birzeit.me)** · [PDF](https://encs5150.birzeit.me/ENCS515-Manual-2025.pdf) · [Setup guide](https://encs5150.birzeit.me/setup) · [All labs](https://birzeit.me)
 
 ## Run it locally
 
@@ -48,7 +48,7 @@ The written content is licensed under [CC BY 4.0](LICENSE): you may share and ad
 
 Not covered by either license, and still owned by their authors:
 
-- `public/ENCS515-Manual.pdf`, the department's manual
+- `public/ENCS515-Manual-2025.pdf`, the department's manual
 
 The Birzeit University name and logo are the university's; they are not licensed here. Screenshots of third-party software, and product names and logos, belong to their respective owners.
 

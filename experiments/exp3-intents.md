@@ -139,7 +139,7 @@ The small icon is `R.drawable.ic_launcher_foreground`, the Android head from the
 
 ## Differences from the manual
 
-The 2019 manual's code was written for Android 8 and Android Studio 3.x. Several parts of it now crash, silently do nothing, or force a different minimum SDK. If you compare this page with the PDF, here is what changed and why.
+The manual's code was written in 2019 for Android 8 and Android Studio 3.x, and the 2025 revision keeps it almost unchanged. Several parts of it now crash, silently do nothing, or force a different minimum SDK. If you compare this page with the PDF, here is what changed and why.
 
 ### 1. The notification channel
 
@@ -255,7 +255,7 @@ Without this, tapping the notification opens the app but the notification stays 
 gmailIntent.setAction(Intent.ACTION_SENDTO);
 gmailIntent.setType("message/rfc822");
 gmailIntent.setData(Uri.parse("mailto:"));
-gmailIntent.putExtra(Intent.EXTRA_EMAIL, "rajaie.imseeh@gmail.com");
+gmailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"rajaie.imseeh@gmail.com"});
 ```
 
 ```java [This guide]
@@ -266,10 +266,9 @@ gmailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"your.email@example.com"})
 
 :::
 
-Two bugs here:
+The 2025 manual fixed one bug: **`EXTRA_EMAIL` must be a `String[]`**, because an email can have several recipients. Email apps read it with `getStringArrayExtra`, so the 2019 manual's plain `String` was silently ignored and the **To** field stayed empty.
 
-- **`EXTRA_EMAIL` must be a `String[]`**, because an email can have several recipients. Email apps read it with `getStringArrayExtra`, so a plain `String` is silently ignored and the **To** field stays empty.
-- **`setType` did nothing.** `setData` and `setType` each clear the other, so the `setData` call that followed erased the type. With `ACTION_SENDTO`, the `mailto:` data alone is what restricts the choice to email apps, so `setType` is removed.
+One bug remains: **`setType` does nothing.** `setData` and `setType` each clear the other, so the `setData` call that follows erases the type. With `ACTION_SENDTO`, the `mailto:` data alone is what restricts the choice to email apps, so `setType` is removed.
 
 ### 7. Starting other apps safely (new)
 

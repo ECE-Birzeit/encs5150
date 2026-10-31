@@ -12,7 +12,7 @@ hero:
     - theme: alt
       text: Download Full Manual
       # Relative on purpose: VitePress doesn't add `base` to non-page links in hero actions.
-      link: ./ENCS515-Manual.pdf
+      link: ./ENCS515-Manual-2025.pdf
       target: _blank
     - theme: alt
       text: Setup Guide
