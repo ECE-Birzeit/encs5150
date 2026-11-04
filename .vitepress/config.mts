@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
 
 // BASE_PATH is set by the GitHub Pages workflow ("/repo-name/" or "/" with a custom domain).
 const base = process.env.BASE_PATH || '/'
 
-export default defineConfig({
+export default withPwa(defineConfig({
   base,
   lang: 'en-US',
   title: 'ENCS5150 Android Lab',
@@ -15,6 +16,7 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
+    ['link', { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png` }],
     ['meta', { name: 'theme-color', content: '#ea580c' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'ECE Labs · Birzeit University' }],
@@ -122,4 +124,34 @@ export default defineConfig({
       copyright: 'Developed by <a href="https://mabushelbaia.com" target="_blank">Mohammad Abu-Shelbaia</a>',
     },
   },
-})
+
+  // Installable, offline-capable app. Icons are rendered from favicon.svg (the sidebar logo).
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'ENCS5150 Advanced Computer Systems Engineering Laboratory',
+      short_name: 'ENCS5150',
+      description:
+        'Step-by-step Android (Java) guides for the ENCS515 Advanced Computer Systems Engineering Lab at Birzeit University.',
+      theme_color: '#ea580c',
+      background_color: '#ffffff',
+      display: 'standalone',
+      scope: base,
+      start_url: base,
+      icons: [
+        { src: `${base}icons/pwa-192x192.png`, sizes: '192x192', type: 'image/png' },
+        { src: `${base}icons/pwa-512x512.png`, sizes: '512x512', type: 'image/png' },
+        { src: `${base}icons/maskable-512x512.png`, sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+        { src: `${base}favicon.svg`, sizes: 'any', type: 'image/svg+xml' },
+      ],
+    },
+    workbox: {
+      // The manual PDF is left out: it is too large to precache, and the guides do not need it offline.
+      globPatterns: ['**/*.{css,js,html,svg,png,jpg,jpeg,webp,ico,txt,woff2}'],
+      maximumFileSizeToCacheInBytes: 5000000,
+    },
+    experimental: {
+      includeAllowlist: true,
+    },
+  },
+}))
