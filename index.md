@@ -5,6 +5,9 @@ hero:
   name: ENCS5150
   text: Advanced Computer Systems Engineering Laboratory
   tagline: Department of Electrical & Computer Engineering · Birzeit University
+  image:
+    src: /favicon.svg
+    alt: ENCS5150 course icon
   actions:
     - theme: brand
       text: Explore Experiments
