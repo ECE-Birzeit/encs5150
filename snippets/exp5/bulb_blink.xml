@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The frames, shown in order. oneshot="false" loops back to the first frame. -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/bulb_off" android:duration="400" />
+    <item android:drawable="@drawable/bulb_on" android:duration="400" />
+</animation-list>

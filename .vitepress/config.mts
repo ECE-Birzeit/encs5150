@@ -76,6 +76,7 @@ export default withPwa(defineConfig({
             { text: '2. Android Layouts', link: '/experiments/exp2-layouts' },
             { text: '3. Intents and Notifications', link: '/experiments/exp3-intents' },
             { text: '4. SQLite Database', link: '/experiments/exp4-sqlite' },
+            { text: '5. Frame and Tween Animation', link: '/experiments/exp5-animation' },
           ],
         },
         {
@@ -99,6 +100,8 @@ export default withPwa(defineConfig({
             { text: 'Intents and Intent Filters', link: 'https://developer.android.com/guide/components/intents-filters' },
             { text: 'Save Data Using SQLite', link: 'https://developer.android.com/training/data-storage/sqlite' },
             { text: 'Database Inspector', link: 'https://developer.android.com/studio/inspect/database' },
+            { text: 'Drawable Animations', link: 'https://developer.android.com/develop/ui/views/animations/drawable-animation' },
+            { text: 'View (Tween) Animation', link: 'https://developer.android.com/guide/topics/resources/animation-resource#View' },
             { text: 'Layout Inspector', link: 'https://developer.android.com/studio/debug/layout-inspector' },
             { text: 'Learn Java (dev.java)', link: 'https://dev.java/learn/' },
             { text: 'Spring Guides', link: 'https://spring.io/guides' },

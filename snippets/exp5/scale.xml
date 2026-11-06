@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Grow to 3 times the size in 2 seconds, keeping the centre fixed. -->
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000"
+    android:fromXScale="1"
+    android:toXScale="3"
+    android:fromYScale="1"
+    android:toYScale="3"
+    android:pivotX="50%"
+    android:pivotY="50%" />

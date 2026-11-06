@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fade in from invisible (0.0) to fully visible (1.0) in 1 second. -->
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fromAlpha="0.0"
+    android:toAlpha="1.0" />

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Five animations played one after another: startOffset delays each one
+     until the previous one has finished. -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:shareInterpolator="true">
+
+    <!-- Right -->
+    <translate
+        android:duration="800"
+        android:fromXDelta="0%p"
+        android:toXDelta="25%p" />
+
+    <!-- Down -->
+    <translate
+        android:duration="800"
+        android:startOffset="800"
+        android:fromYDelta="0%p"
+        android:toYDelta="25%p" />
+
+    <!-- Left: back above the starting point -->
+    <translate
+        android:duration="800"
+        android:startOffset="1600"
+        android:fromXDelta="0%p"
+        android:toXDelta="-25%p" />
+
+    <!-- Up: back to the starting point -->
+    <translate
+        android:duration="800"
+        android:startOffset="2400"
+        android:fromYDelta="0%p"
+        android:toYDelta="-25%p" />
+
+    <!-- One spin to finish -->
+    <rotate
+        android:duration="800"
+        android:startOffset="3200"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%" />
+
+</set>
