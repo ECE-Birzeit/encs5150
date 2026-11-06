@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap');</style>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="16" cy="16" r="1.2" fill="rgba(245,245,245,.07)"/></pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#000" flood-opacity=".55"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#1b1b1f"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <g font-family="Geist, sans-serif" fill="#f5f5f5">
+    <text x="64" y="72" font-size="24" font-weight="600" letter-spacing="-.24">ECE Labs</text>
+    <text x="184" y="72" font-family="Geist Mono, monospace" font-size="18" fill="#a8a8a8">Birzeit University</text>
+    <text x="58" y="252" font-size="112" font-weight="600" letter-spacing="-5.6" fill="#fb923c">ENCS5150</text>
+    <text font-size="46" font-weight="600" letter-spacing="-1.4"><tspan x="64" y="334">Advanced Computer Systems</tspan><tspan x="64" y="386">Engineering Laboratory</tspan></text>
+    <text y="584" font-family="Geist Mono, monospace" font-size="19" fill="#a8a8a8"><tspan x="64" fill="#fb923c">encs5150.birzeit.me</tspan><tspan dx="20">Android · Spring Boot</tspan></text>
+  </g>
+  <g transform="translate(930 305) rotate(-10) translate(-130.0 -130.0) scale(4.0625)" filter="url(#shadow)"><rect width="64" height="64" rx="12" fill="#ea580c"/>
+  <path d="M22 31 17 22M42 31l5-9" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13 45a19 19 0 0 1 38 0z" fill="#fff"/>
+  <circle cx="24.5" cy="37.5" r="2.5" fill="#ea580c"/>
+  <circle cx="39.5" cy="37.5" r="2.5" fill="#ea580c"/></g>
+</svg>
