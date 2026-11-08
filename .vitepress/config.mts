@@ -1,6 +1,10 @@
 import { defineConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { linkPreviews } from './og.mts'
+import { sidebar } from './lab.mts'
+import { fileURLToPath } from 'node:url'
+
+const srcDir = fileURLToPath(new URL('..', import.meta.url))
 
 // Per-experiment link previews, drawn at build time (see og.mts)
 const og = linkPreviews({ code: 'ENCS5150', name: 'Advanced Computer Systems Engineering Laboratory', host: 'encs5150.birzeit.me', accent: '#fb923c', platform: 'Android (Java) · Spring Boot' })
@@ -64,39 +68,14 @@ export default withPwa(defineConfig({
       { text: 'All labs', link: 'https://birzeit.me/' },
     ],
 
-    sidebar: {
-      '/': [
-        {
-          text: 'Getting Started',
-          items: [
-            { text: 'Setup Guide', link: '/setup' },
-            { text: 'All Experiments', link: '/experiments/' },
-          ],
-        },
-        {
-          text: 'Experiments',
-          items: [
-            { text: '1. Introduction to Android', link: '/experiments/exp1-intro' },
-            { text: '2. Android Layouts', link: '/experiments/exp2-layouts' },
-            { text: '3. Intents and Notifications', link: '/experiments/exp3-intents' },
-            { text: '4. SQLite Database', link: '/experiments/exp4-sqlite' },
-            { text: '5. Frame and Tween Animation', link: '/experiments/exp5-animation' },
-          ],
-        },
-        {
-          // Downloads + Documentation are pushed to the sidebar bottom in custom.css.
-          text: 'Downloads',
-          collapsed: true,
-          items: [
+    // Built from the pages (see lab.mts): adding an experiment or a setup page is the only step
+    sidebar: sidebar(srcDir, {
+      downloads: [
             { text: 'Android Studio', link: 'https://developer.android.com/studio' },
             { text: 'IntelliJ IDEA (Spring Boot labs)', link: 'https://www.jetbrains.com/idea/download/' },
             { text: 'Postman (REST labs)', link: 'https://www.postman.com/downloads/' },
-          ],
-        },
-        {
-          text: 'Documentation',
-          collapsed: true,
-          items: [
+      ],
+      docs: [
             { text: 'Android Developer Guides', link: 'https://developer.android.com/guide' },
             { text: 'Android Studio User Guide', link: 'https://developer.android.com/studio/intro' },
             { text: 'Layouts in Views', link: 'https://developer.android.com/develop/ui/views/layout/declaring-layout' },
@@ -110,10 +89,8 @@ export default withPwa(defineConfig({
             { text: 'Learn Java (dev.java)', link: 'https://dev.java/learn/' },
             { text: 'Spring Guides', link: 'https://spring.io/guides' },
             { text: 'Spring Initializr', link: 'https://start.spring.io' },
-          ],
-        },
       ],
-    },
+    }),
 
     outline: { level: [2, 3] },
 

@@ -1,3 +1,7 @@
+---
+title: "Introduction to Android Programming"
+short: "Introduction to Android"
+---
 # Introduction to Android Programming
 
 In this lab you create your first Android project, look at the parts every Android app is made of, and build a small app that reads your name from a text field and greets you when you tap a button. Then you run it on the emulator and on a real phone.
@@ -10,7 +14,7 @@ In this lab you create your first Android project, look at the parts every Andro
 - Run the app on the Android emulator and on a physical device.
 
 ::: tip Before the lab
-Finish the [Setup Guide](/setup) at home. Installing Android Studio and downloading an emulator image takes too long to do in the lab.
+Finish the [Setup Guide](/setup/) at home. Installing Android Studio and downloading an emulator image takes too long to do in the lab.
 :::
 
 ## Background
@@ -41,7 +45,7 @@ A screen has two halves:
 
 ## Step 1: Create the project
 
-Create a new project as described in [Setup Guide → Create a lab project](/setup#_3-create-a-lab-project), with these values:
+Create a new project as described in [Setup Guide → Create a lab project](/setup/#_3-create-a-lab-project), with these values:
 
 | Field | Value |
 | --- | --- |
@@ -111,7 +115,7 @@ Select your emulator in the toolbar and press **Run ▶**.
 
 ### On a phone
 
-Enable **USB debugging** as described in [Setup Guide → Using a physical phone](/setup#using-a-physical-phone-optional), plug the phone in, select it in the toolbar, and press **Run ▶**. The app stays installed on the phone afterwards.
+Enable **USB debugging** as described in [Setup Guide → Using a physical phone](/setup/#using-a-physical-phone-optional), plug the phone in, select it in the toolbar, and press **Run ▶**. The app stays installed on the phone afterwards.
 
 ## Run and check
 

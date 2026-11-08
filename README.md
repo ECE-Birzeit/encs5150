@@ -27,7 +27,7 @@ npm run preview    # serve the built site
 | Path | Contents |
 |:--|:--|
 | `index.md` | Home page |
-| `setup.md` | Setup guide: Android Studio, the emulator, creating lab projects |
+| `setup/index.md` | Setup guide: Android Studio, the emulator, creating lab projects |
 | `experiments/` | Experiment index and one page per experiment |
 | `snippets/` | Long code files included with `<<< @/snippets/File.java{java}` |
 | `public/` | Static files served as-is: logo, link-preview image, manual PDF |

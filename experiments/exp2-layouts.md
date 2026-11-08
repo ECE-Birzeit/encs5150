@@ -1,3 +1,6 @@
+---
+title: "Android Layouts"
+---
 # Android Layouts
 
 In this lab you build a **Customer List** app with two screens:
@@ -77,7 +80,7 @@ The old manual started a **new** `MainActivity` from the form and finished the o
 
 ## Step 1: Create the project
 
-Create a new project as described in [Setup Guide → Create a lab project](/setup#_3-create-a-lab-project):
+Create a new project as described in [Setup Guide → Create a lab project](/setup/#_3-create-a-lab-project):
 
 | Field | Value |
 | --- | --- |

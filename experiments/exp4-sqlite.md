@@ -1,3 +1,6 @@
+---
+title: "SQLite Database"
+---
 # SQLite Database
 
 In [Android Layouts](./exp2-layouts) the customers lived in an `ArrayList`, and they were gone as soon as Android killed the app. In this lab you keep the same two screens and the same layouts, but save the customers in an **SQLite database** in the app's private storage. They survive closing the app and rebooting the phone. You also add a **confirmation dialog** that asks before a customer is deleted.

@@ -1,3 +1,7 @@
+---
+title: "Using Intents and Notifications"
+short: "Intents and Notifications"
+---
 # Using Intents and Notifications
 
 In this lab you build one screen with five buttons. Three of them use **implicit Intents** to hand work to other apps: the phone dialer, an email app and Google Maps. The other two notify the user: a **Toast** that pops up on screen, and a **notification** in the status bar.
@@ -55,7 +59,7 @@ Since Android 8.0 every notification belongs to a **channel**, such as "Messages
 
 The Maps and email buttons need those apps to be installed:
 
-1. Use an emulator whose system image has the **Google Play** label (see [Setup Guide → Create an emulator](/setup#_2-create-an-emulator)). These images include Gmail and the Play Store.
+1. Use an emulator whose system image has the **Google Play** label (see [Setup Guide → Create an emulator](/setup/#_2-create-an-emulator)). These images include Gmail and the Play Store.
 2. If **Maps** isn't installed, open **Play Store** on the emulator, sign in with a Google account, and install **Google Maps**.
 3. To actually send the test email, open **Gmail** on the emulator once and sign in.
 
@@ -63,7 +67,7 @@ Without these apps the buttons still work: they show "No app installed to handle
 
 ## Step 2: Create the project
 
-Create a new project as described in [Setup Guide → Create a lab project](/setup#_3-create-a-lab-project):
+Create a new project as described in [Setup Guide → Create a lab project](/setup/#_3-create-a-lab-project):
 
 | Field | Value |
 | --- | --- |

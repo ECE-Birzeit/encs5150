@@ -1,3 +1,7 @@
+---
+title: "Frame Animation and Tween Animation"
+short: "Frame and Tween Animation"
+---
 # Frame Animation and Tween Animation
 
 In this lab you build one screen with two kinds of animation. At the top, two light bulbs are animated by swapping their **pictures**: one fades smoothly from off to on, and the other blinks frame by frame like a flip book. Below them, a **tween animation** rotates, scales, moves and fades an image, and finally sends it on a short tour around the screen.
@@ -60,7 +64,7 @@ A tween animation changes where the view is **drawn**, not where it **is**. Afte
 
 ## Step 1: Create the project
 
-Create a new project as described in [Setup Guide → Create a lab project](/setup#_3-create-a-lab-project):
+Create a new project as described in [Setup Guide → Create a lab project](/setup/#_3-create-a-lab-project):
 
 | Field | Value |
 | --- | --- |
