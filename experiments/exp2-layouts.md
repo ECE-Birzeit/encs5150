@@ -1,5 +1,6 @@
 ---
 title: "Android Layouts"
+manual: "/ENCS515-Manual-2025.pdf#page=15"
 ---
 # Android Layouts
 

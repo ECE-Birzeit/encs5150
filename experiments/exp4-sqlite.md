@@ -1,5 +1,6 @@
 ---
 title: "SQLite Database"
+manual: "/ENCS515-Manual-2025.pdf#page=47"
 ---
 # SQLite Database
 

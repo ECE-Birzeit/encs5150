@@ -1,6 +1,7 @@
 ---
 title: "Introduction to Android Programming"
 short: "Introduction to Android"
+manual: "/ENCS515-Manual-2025.pdf#page=3"
 ---
 # Introduction to Android Programming
 

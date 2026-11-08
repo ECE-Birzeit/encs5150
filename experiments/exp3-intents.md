@@ -1,6 +1,7 @@
 ---
 title: "Using Intents and Notifications"
 short: "Intents and Notifications"
+manual: "/ENCS515-Manual-2025.pdf#page=35"
 ---
 # Using Intents and Notifications
 
