@@ -237,7 +237,7 @@ The manual repeats the name and version in every Activity, and the 2025 revision
 
 Likewise, if you bumped the version in one place and forgot the other, the two screens would disagree about the schema, and SQLite would throw `Can't downgrade database from version 2 to 1`. The name and version now live once in the helper.
 
-The manual also created a new helper on every `onResume` and every button press and never closed it. This guide creates one per Activity in `onCreate` and closes it in `onDestroy`. In [Exp 6](/experiments/) you'll see the singleton pattern, which shares one helper across the whole app.
+The manual also created a new helper on every `onResume` and every button press and never closed it. This guide creates one per Activity in `onCreate` and closes it in `onDestroy`. In [Exp 6](./exp6-preferences) you'll see the singleton pattern, which shares one helper across the whole app.
 
 ### 5. `onUpgrade` does something
 
