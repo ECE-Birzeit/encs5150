@@ -46,7 +46,7 @@ On Windows the SDK goes into `C:\Users\<you>\AppData\Local\Android\Sdk` by defau
    - Use the **x86_64** image on Intel/AMD machines and the **arm64-v8a** image on Apple silicon.
    - Click the download icon next to the image if it is not installed yet.
 5. Click **Finish**. The device appears in Device Manager.
-6. Press **▶** next to the device to boot it once. The first boot is slow, and later boots are much faster.
+6. Press the play button next to the device to boot it once. The first boot is slow, and later boots are much faster.
 
 ::: details The emulator is very slow or won't start
 - **Windows:** enable **Windows Hypervisor Platform** in *Turn Windows features on or off*, then reboot. Make sure virtualization is enabled in your BIOS/UEFI.
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
 ### Run the app
 
 1. Pick your emulator or phone in the device drop-down in the toolbar.
-2. Click **Run ▶** (<kbd>Shift</kbd>+<kbd>F10</kbd> on Windows/Linux, <kbd>Ctrl</kbd>+<kbd>R</kbd> on macOS).
+2. Click **Run** (the green play button) (<kbd>Shift</kbd>+<kbd>F10</kbd> on Windows/Linux, <kbd>Ctrl</kbd>+<kbd>R</kbd> on macOS).
 3. The app opens on the device and shows **Hello World!**
 
 ## 4. Add another Activity

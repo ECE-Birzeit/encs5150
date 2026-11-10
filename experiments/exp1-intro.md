@@ -56,7 +56,7 @@ Create a new project as described in [Setup Guide → Create a lab project](/set
 | Language | Java |
 | Minimum SDK | API 24 |
 
-Wait for Gradle sync to finish. Then press **Run ▶**. The emulator should show a white screen with **Hello World!** in the middle. If that works, your setup is complete.
+Wait for Gradle sync to finish. Then press **Run** (the green play button). The emulator should show a white screen with **Hello World!** in the middle. If that works, your setup is complete.
 
 ## Step 2: Explore the project
 
@@ -112,11 +112,11 @@ The guides use the full form so that it is clear which method you are implementi
 
 ### On the emulator
 
-Select your emulator in the toolbar and press **Run ▶**.
+Select your emulator in the toolbar and press **Run** (the green play button).
 
 ### On a phone
 
-Enable **USB debugging** as described in [Setup Guide → Using a physical phone](/setup/#using-a-physical-phone-optional), plug the phone in, select it in the toolbar, and press **Run ▶**. The app stays installed on the phone afterwards.
+Enable **USB debugging** as described in [Setup Guide → Using a physical phone](/setup/#using-a-physical-phone-optional), plug the phone in, select it in the toolbar, and press **Run** (the green play button). The app stays installed on the phone afterwards.
 
 ## Run and check
 

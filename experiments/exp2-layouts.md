@@ -30,23 +30,21 @@ Every Android screen is a **tree of `View` objects**.
 
 The add-customer form you build in this lab has this tree:
 
-```text
-LinearLayout (vertical)            ← root, id = main
-├── TextView        "Customer Info"
-├── LinearLayout (horizontal)
-│   ├── TextView    "Id"
-│   └── EditText    editText_Id
-├── LinearLayout (horizontal)
-│   ├── TextView    "Name"
-│   └── EditText    editText_Name
-├── LinearLayout (horizontal)
-│   ├── TextView    "Phone"
-│   └── EditText    editText_Phone
-├── LinearLayout (horizontal)
-│   ├── TextView    "Gender"
-│   └── Spinner     spinner_Gender
-└── Button          button_Add_Customer
-```
+- `LinearLayout` (vertical): the root, id `main`
+  - `TextView` "Customer Info"
+  - `LinearLayout` (horizontal)
+    - `TextView` "Id"
+    - `EditText` `editText_Id`
+  - `LinearLayout` (horizontal)
+    - `TextView` "Name"
+    - `EditText` `editText_Name`
+  - `LinearLayout` (horizontal)
+    - `TextView` "Phone"
+    - `EditText` `editText_Phone`
+  - `LinearLayout` (horizontal)
+    - `TextView` "Gender"
+    - `Spinner` `spinner_Gender`
+  - `Button` `button_Add_Customer`
 
 ### Common layouts
 
@@ -155,12 +153,10 @@ How it works:
 
 `MainActivity` doesn't use an XML layout at all. It creates every view with `new`, nests them, and hands the root to `setContentView`:
 
-```text
-LinearLayout (vertical)      ← rootLinearLayout
-├── Button "Add Customer"    ← addButton
-└── ScrollView
-    └── LinearLayout (vertical)   ← customersLinearLayout, one TextView per customer
-```
+- `LinearLayout` (vertical): `rootLinearLayout`
+  - `Button` "Add Customer": `addButton`
+  - `ScrollView`
+    - `LinearLayout` (vertical): `customersLinearLayout`, one `TextView` per customer
 
 Open `MainActivity.java` and replace the whole file with:
 
