@@ -2,6 +2,7 @@
 title: "Frame Animation and Tween Animation"
 short: "Frame and Tween Animation"
 manual: "/ENCS515-Manual-2025.pdf#page=55"
+slides: "/slides/exp5-animation.pdf"
 ---
 # Frame Animation and Tween Animation
 

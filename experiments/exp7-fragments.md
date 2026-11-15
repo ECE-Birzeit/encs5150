@@ -2,6 +2,7 @@
 title: "Fragments"
 short: "Fragments"
 manual: "/ENCS515-Manual-2025.pdf#page=79"
+slides: "/slides/exp7-fragments.pdf"
 ---
 # Fragments
 

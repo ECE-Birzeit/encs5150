@@ -1,8 +1,9 @@
 <script setup lang="ts">
 // Buttons at the top of an experiment page: "Jump to the procedure" (the first section after
-// Background: Examples, Configuration Steps, ...) and "Lab manual (PDF)": the page's own `manual:`
+// Background: Examples, Configuration Steps, ...), "Lab manual (PDF)": the page's own `manual:`
 // link (its chapter) or, failing that, the lab's whole manual (themeConfig.lab.manual, set by
-// lab-template's config). Same component on every lab site.
+// lab-template's config), and "Slides (PDF)" when the page sets `slides:`. Same component on
+// every lab site.
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useData, useRoute, withBase } from 'vitepress'
 
@@ -11,6 +12,7 @@ const { frontmatter, theme } = useData()
 const target = ref<{ id: string } | null>(null)
 const IDS = ['procedure', 'examples', 'example', 'lab-work', 'tasks']
 const isExperiment = computed(() => /\/experiments\/exp\d+-/.test(route.path))
+const slides = computed(() => (isExperiment.value && frontmatter.value.slides ? withBase(frontmatter.value.slides) : ''))
 const manual = computed(() => {
   const link = frontmatter.value.manual || theme.value.lab?.manual
   return isExperiment.value && link ? withBase(link) : ''
@@ -40,7 +42,8 @@ function go(e: MouseEvent) {
 </script>
 
 <template>
-  <div v-if="target || manual" class="jump-row">
+  <div v-if="target || manual || slides" class="jump-row">
+    <a v-if="slides" class="jump alt" :href="slides" target="_blank" rel="noopener">Slides (PDF) <svg class="icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <a v-if="manual" class="jump alt" :href="manual" target="_blank" rel="noopener">Lab manual (PDF) <svg class="icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <a v-if="target" class="jump" :href="'#' + target.id" @click="go">Jump to the procedure <svg class="icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>

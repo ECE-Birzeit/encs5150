@@ -2,6 +2,7 @@
 title: "Singleton and Shared Preferences"
 short: "Singleton and Shared Preferences"
 manual: "/ENCS515-Manual-2025.pdf#page=69"
+slides: "/slides/exp6-preferences.pdf"
 ---
 # Singleton and Shared Preferences
 

@@ -9,6 +9,8 @@
 //   title:   the page title (else its first "# " heading)
 //   short:   a shorter name for the sidebar
 //   part:    a group heading, e.g. "Part 1: ARM Assembly"; experiments without one go under "Experiments"
+//   manual:  the experiment's chapter of the manual, e.g. "/Manual.pdf#page=79" (a "Lab manual" button)
+//   slides:  the experiment's slide deck, e.g. "/slides/exp7-fragments.pdf" (a "Slides" button)
 // and a setup page: title, short, order (a number; lower comes first).
 //
 // redirects() keeps old addresses working after a page moves: each one gets a tiny page that sends

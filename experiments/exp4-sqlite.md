@@ -1,6 +1,7 @@
 ---
 title: "SQLite Database"
 manual: "/ENCS515-Manual-2025.pdf#page=47"
+slides: "/slides/exp4-sqlite.pdf"
 ---
 # SQLite Database
 
