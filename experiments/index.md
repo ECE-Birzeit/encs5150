@@ -10,7 +10,7 @@ Each guide is a step-by-step replacement for the matching chapter of the [depart
 | 4 | [SQLite Database](./exp4-sqlite) | Creating and querying a local database with `SQLiteOpenHelper`, cursors, confirmation dialogs |
 | 5 | [Frame Animation and Tween Animation](./exp5-animation) | Frame-by-frame animation, cross-fades, translate / rotate / scale / alpha, the `Animation` class |
 | 6 | [Singleton and Shared Preferences](./exp6-preferences) | The singleton pattern, saving key–value data with `SharedPreferences` |
-| 7 | Fragments | Fragment lifecycle, multi-pane UIs, swapping Fragments at runtime |
+| 7 | [Fragments](./exp7-fragments) | Fragment lifecycle, adding and swapping Fragments at runtime, sharing data with a `ViewModel` |
 | 8 | Integrating REST API into Android Application | HTTP GET and POST requests, parsing JSON into Java objects |
 | 9 | Spring Boot Part 1 | Spring Boot fundamentals, building REST services with Spring MVC |
 | 10 | Spring Boot Part 2 | Continues Part 1 |
